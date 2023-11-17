@@ -31,5 +31,8 @@ void traverse_left_to_right(listint_t **list, int *swapped);
 void traverse_right_to_left(listint_t **list, int *swapped);
 void cocktail_sort_list(listint_t **list);
 
+/* counting sort*/
+void counting_sort(int *array, size_t size);
+
 
 #endif
