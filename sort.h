@@ -45,6 +45,11 @@ void merge_sort(int *array, size_t size);
 void sift_down(int *array, size_t size, size_t index, size_t orig_size);
 void heap_sort(int *array, size_t size);
 
+/* radix sort */
+int getMax(int *array, size_t size);
+void countingSort(int *array, size_t size, int exp);
+void radix_sort(int *array, size_t size);
+
 
 
 
