@@ -41,6 +41,12 @@ void merprint(int *array, int *left, size_t l_size, int *right, size_t r_size);
 void merge(int *array, int *left, size_t l_size, int *right, size_t r_size);
 void merge_sort(int *array, size_t size);
 
+/* heap sort */
+void sift_down(int *array, size_t size, size_t index, size_t orig_size);
+void heap_sort(int *array, size_t size);
+
+
+
 
 
 #endif
