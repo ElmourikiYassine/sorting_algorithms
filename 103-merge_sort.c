@@ -59,14 +59,14 @@ void copy_to_temp(int *array, int *temp, size_t size)
 }
 
 /**
- * mer_print - Merges two subarrays and prints the result.
+ * merprint - Merges two subarrays and prints the result.
  * @array: The main array.
  * @left: Pointer to the left subarray.
  * @l_size: Size of the left subarray.
  * @right: Pointer to the right subarray.
  * @r_size: Size of the right subarray.
  **/
-void mer_print(int *array, int *left, size_t l_size, int *right, size_t r_size)
+void merprint(int *array, int *left, size_t l_size, int *right, size_t r_size)
 {
 	int *temp = malloc((l_size + r_size) * sizeof(int));
 
@@ -94,7 +94,7 @@ void mer_print(int *array, int *left, size_t l_size, int *right, size_t r_size)
  **/
 void merge(int *array, int *left, size_t l_size, int *right, size_t r_size)
 {
-	mer_print(array, left, l_size, right, r_size);
+	merprint(array, left, l_size, right, r_size);
 }
 
 /**

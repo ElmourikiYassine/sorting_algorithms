@@ -37,7 +37,7 @@ void counting_sort(int *array, size_t size);
 /* merge sort */
 void mars(int *array, int *left, size_t l_size, int *right, size_t r_size);
 void copy_to_temp(int *array, int *temp, size_t size);
-void mer_print(int *array, int *left, size_t l_size, int *right, size_t r_size);
+void merprint(int *array, int *left, size_t l_size, int *right, size_t r_size);
 void merge(int *array, int *left, size_t l_size, int *right, size_t r_size);
 void merge_sort(int *array, size_t size);
 
