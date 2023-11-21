@@ -1,37 +1,124 @@
-This repository contains implementations of various sorting algorithms in C.
+# Sorting Algorithms
 
-## Tasks
+This repository contains various sorting algorithms implemented in C. Each algorithm is designed to sort arrays or doubly linked lists of integers in ascending order. The implementation includes visualizations of the sorting process and explanations of the time complexity.
 
-1. **Bubble sort:**
-   * Implement the bubble sort algorithm in `0-bubble_sort.c`.
-   * Print the array after each time you swap two elements.
-   * Write the big O notations of the time complexity of the Bubble sort algorithm in `0-O`.
+## Algorithms
 
-2. **Insertion sort:**
-   * Implement the insertion sort algorithm in `1-insertion_sort_list.c`.
-   * You are not allowed to modify the integer n of a node. You have to swap the nodes themselves.
-   * Print the list after each time you swap two elements.
-   * Write the big O notations of the time complexity of the Insertion sort algorithm in `1-O`.
-
-3. **Selection sort:**
-   * Implement the selection sort algorithm in `2-selection_sort.c`.
-   * Print the array after each time you swap two elements.
-   * Write the big O notations of the time complexity of the Selection sort algorithm in `2-O`.
-
-4. **Quick sort:**
-   * Implement the quick sort algorithm in `3-quick_sort.c`.
-   * You must implement the Lomuto partition scheme.
-   * The pivot should always be the last element of the partition being sorted.
-   * Print the array after each time you swap two elements.
-   * Write the big O notations of the time complexity of the Quick sort algorithm in `3-O`.
-
-5. **Shell sort - Knuth Sequence:**
-   * Implement the shell sort algorithm in `100-shell_sort.c`, using the Knuth sequence.
-   * You must use the following sequence of intervals (a.k.a the Knuth sequence):
+1. **Insertion Sort**
+   - Prototype: `void insertion_sort_list(listint_t **list);`
+   - Description: Sorts a doubly linked list of integers using the Insertion sort algorithm.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 1-main.c)
      ```
-     n+1 = n * 3 + 1
-     1, 4, 13, 40, 121, ...
-     
-   * Print the array each time you decrease the interval.
-   * No big O notations of the time complexity of the Shell sort (Knuth sequence) algorithm needed - as the complexity is dependent on the size of array and gap.
+
+   - Big O Notations:
+     - Best Case: O(n)
+     - Average Case: O(n^2)
+     - Worst Case: O(n^2)
+
+2. **Selection Sort**
+   - Prototype: `void selection_sort(int *array, size_t size);`
+   - Description: Sorts an array of integers using the Selection sort algorithm.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 2-main.c)
+     ```
+
+   - Big O Notations:
+     - Best Case: O(n^2)
+     - Average Case: O(n^2)
+     - Worst Case: O(n^2)
+
+3. **Quick Sort**
+   - Prototype: `void quick_sort(int *array, size_t size);`
+   - Description: Sorts an array of integers using the Quick sort algorithm with the Lomuto partition scheme.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 3-main.c)
+     ```
+
+   - Big O Notations:
+     - Best Case: O(n log n)
+     - Average Case: O(n log n)
+     - Worst Case: O(n^2)
+
+4. **Shell Sort - Knuth Sequence**
+   - Prototype: `void shell_sort(int *array, size_t size);`
+   - Description: Sorts an array of integers using the Shell sort algorithm with the Knuth sequence.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 100-main.c)
+     ```
+
+5. **Cocktail Shaker Sort**
+   - Prototype: `void cocktail_sort_list(listint_t **list);`
+   - Description: Sorts a doubly linked list of integers using the Cocktail shaker sort algorithm.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 101-main.c)
+     ```
+
+   - Big O Notations:
+     - Best Case: O(n)
+     - Average Case: O(n^2)
+     - Worst Case: O(n^2)
+
+6. **Counting Sort**
+   - Prototype: `void counting_sort(int *array, size_t size);`
+   - Description: Sorts an array of integers using the Counting sort algorithm.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 102-main.c)
+     ```
+
+   - Big O Notations:
+     - Best Case: O(n + k)
+     - Average Case: O(n + k)
+     - Worst Case: O(n + k)
+
+7. **Merge Sort**
+   - Prototype: `void merge_sort(int *array, size_t size);`
+   - Description: Sorts an array of integers using the Merge sort algorithm.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 103-main.c)
+     ```
+
+   - Big O Notations:
+     - Best Case: O(n log n)
+     - Average Case: O(n log n)
+     - Worst Case: O(n log n)
+
+8. **Heap Sort**
+   - Prototype: `void heap_sort(int *array, size_t size);`
+   - Description: Sorts an array of integers using the Heap sort algorithm with sift-down heap sort.
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 104-main.c)
+     ```
+
+   - Big O Notations:
+     - Best Case: O(n log n)
+     - Average Case: O(n log n)
+     - Worst Case: O(n log n)
+
+9. **Radix Sort**
+   - Prototype: `void radix_sort(int *array, size_t size);`
+   - Description: Sorts an array of integers using the Radix sort algorithm (LSD).
+   - Usage example:
+     ```c
+     #include "sort.h"
+     // ... (see example in 105-main.c)
+     ```
+
+For more details and examples, refer to the individual files in this repository.
 
