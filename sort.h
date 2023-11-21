@@ -49,8 +49,12 @@ int getMax(int *array, size_t size);
 void countingSort(int *array, size_t size, int exp);
 void radix_sort(int *array, size_t size);
 
+void quick_sort_hoare(int *array, size_t size);
 
-
+/* Helper functions */
+void quicksort_hoare(int *array, int low, int high, size_t size);
+int hoare_partition(int *array, int low, int high, size_t size);
+void swap(int *a, int *b);
 
 
 #endif
